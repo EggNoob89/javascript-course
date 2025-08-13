@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Review</title>
+    <style>
+      p{
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      /*
+        This is a comment
+      */
+      /* Button Base Styles */
+      .red-button,
+      .yellow-button {
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s, box-shadow 0.3s, opacity 0.2s;
+      }
+
+      /* Red Button Styles */
+      .red-button {
+        padding: 12px 28px;
+        border-radius: 25px;
+        background: linear-gradient(90deg, #ff5858 0%, #f857a6 100%);
+        color: #fff;
+        box-shadow: 0 4px 14px rgba(248, 87, 166, 0.2);
+        letter-spacing: 1px;
+      }
+      .red-button:hover {
+        background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+        box-shadow: 0 8px 24px rgba(248, 87, 166, 0.35);
+        transform: translateY(-2px) scale(1.04);
+        opacity: 0.9;
+      }
+      .red-button:active {
+        opacity: 0.7;
+        box-shadow: 0 2px 6px rgba(248, 87, 166, 0.15);
+      }
+
+      /* Yellow Button Styles */
+      .yellow-button {
+        padding: 10px 24px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+        color: #333;
+        box-shadow: 0 2px 8px rgba(255, 226, 89, 0.2);
+      }
+      .yellow-button:hover {
+        background: linear-gradient(90deg, #ffa751 0%, #ffe259 100%);
+        box-shadow: 0 4px 16px rgba(255, 226, 89, 0.3);
+        opacity: 0.9;
+      }
+      .yellow-button:active {
+        opacity: 0.7;
+        box-shadow: 0 1px 4px rgba(255, 226, 89, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      This is a comment
+    -->
+    <button title="Good job!" class="red-button" onclick="
+      alert('Good job')
+      ">
+      hello
+    </button>
+    <p>
+      paragraph of <button class="yellow-button">hello</button> text
+    </p>
+
+    <script>
+      // This is a comment.
+      // This code creates a popup.
+      // alert('hello')
+
+      /*
+        multi
+        line 
+        comment
+      */
+
+      console.log(2+3)
+      console.log('some' + 'text');
+    </script>
+  </body>
+</html>
